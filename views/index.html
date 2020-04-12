@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人员列表</title>
+</head>
+<body>
+  
+  <!-- 同步表单上传文件的时候，一定要加上enctype="multipart/form-data" -->
+  <form action="/add" method="post" enctype="multipart/form-data">
+    网名:<input type="text" name="nickname" />
+    头像:<input type="file" name="avatar" />
+    位置:<input type="text" name="location" value="" />
+    <button>添加</button>
+  </form>
+</body>
+</html>

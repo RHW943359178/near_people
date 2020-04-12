@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>附近的人</title>
+</head>
+<body>
+  英雄列表
+  <ul>
+    {{each heros}}
+      <li>      
+        {{$value.nickname}}
+        <img src="{{$value.img}}" alt="">
+        距离我 {{$value.dist.calculated}} 米
+      </li>
+    {{/each}}
+  </ul>
+</body>
+</html>

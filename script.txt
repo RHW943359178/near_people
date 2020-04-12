@@ -1,0 +1,11 @@
+show dbs;
+
+use xxx;
+
+show collections;
+
+db.users.find();
+
+cls;
+
+db;
